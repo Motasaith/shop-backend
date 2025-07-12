@@ -27,7 +27,7 @@ app.use('/api/', limiter);
 // CORS configuration
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? ['https://yourdomain.com'] 
+    ? ['https://shopin-frontend-h1xt.onrender.com'] 
     : ['http://localhost:3000'],
   credentials: true
 }));
