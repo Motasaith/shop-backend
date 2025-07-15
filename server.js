@@ -18,6 +18,9 @@ connectDB();
 
 const app = express();
 
+// Trust proxy for deployment on Render
+app.set('trust proxy', 1);
+
 // Security middleware
 app.use(helmet({
   contentSecurityPolicy: {
